@@ -9,7 +9,6 @@ pub fn ls(path: &str) -> (i32, String, String){
     (code, output, error)
 }
 
-
 pub fn backgroundls(path: &str) -> String{
     let options = run_script::ScriptOptions::new();
     let _child = run_script::spawn_script!(
