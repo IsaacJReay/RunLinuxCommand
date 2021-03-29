@@ -1,5 +1,6 @@
 #[allow(non_snake_case)]
 mod funct;
+
 fn main() {
     
     // Give Path Arguments for ls command
