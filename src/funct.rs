@@ -1,3 +1,14 @@
+pub fn sudomkdir(path: &str) -> (i32, String, String){
+    let options = run_script::ScriptOptions::new();
+    let (code, output, error) = run_script::run_script!(
+        &format!(r#"sudo mkdir {}"#, path),
+        &vec![],
+        &options
+    ).unwrap();
+
+    (code, output, error)
+}
+
 pub fn ls(path: &str) -> (i32, String, String){
     let options = run_script::ScriptOptions::new();
     let (code, output, error) = run_script::run_script!(
