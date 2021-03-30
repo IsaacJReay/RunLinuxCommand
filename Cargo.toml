@@ -1,5 +1,5 @@
 [package]
-name = "RunLinuxCommand"
+name = "rust_run_linux_command"
 version = "0.1.0"
 authors = ["IsaacJReay <isaacjacksonreay@gmail.com>"]
 edition = "2018"
